@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        
+.header {
+    background-color: #8E8FFA;
+    color: #190482;
+    font-size: x-large;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 750;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+.box1 {
+    background-color: grey;
+}
+
+.box2 {
+    background-color: white;
+}
+
+.box3 {
+    background-color: blue;
+}
+
+.box4 {
+    background-color: yellow;
+}
+    </style>
+</head>
+<body class="body">
+    <header class="header">COLOR CHANGING</header>
+
+    <div class="heading">
+        <h3>COLOR SCHEMA SWITCHER</h3>
+    </div>
+
+    <div class="boxes">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+<script>
+    let box1 = document.querySelector(".box1");
+let box2 = document.querySelector(".box2");
+let box3 = document.querySelector(".box3");
+let box4 = document.querySelector(".box4");
+
+box1.addEventListener('click',() => {
+    document.querySelector(".body").style.backgroundColor="grey";
+})
+
+box2.addEventListener('click',() => {
+    document.querySelector(".body").style.backgroundColor="white";
+})
+
+box3.addEventListener('click',() => {
+    document.querySelector(".body").style.backgroundColor="blue";
+})
+
+box4.addEventListener('click',() => {
+    document.querySelector(".body").style.backgroundColor="yellow";
+})
+
+
+document.querySelector(".body").style.backgroundColor="#212121";
+</script>
+</html>
