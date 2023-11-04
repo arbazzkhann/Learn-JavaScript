@@ -41,25 +41,25 @@ Syntax:
 // })
 
 
-//Same Question but with start button
-// let heading1 = document.querySelector(".head1")
-// let startButton = document.querySelector("#start")
-// let stopButton = document.querySelector("#stop")
+// Same Question but with start button
+let heading1 = document.querySelector(".head1")
+let startButton = document.querySelector("#start")
+let stopButton = document.querySelector("#stop")
 
-// //setTimeout
-// startButton.addEventListener('click', function() {
-//     setTimeout(function() {
-//         heading1.innerText = "Heading Changed";
-//         heading1.style.color = "green";
-//         console.log("heading Changed")
-//     }, 3000)    
-// })
+//setTimeout
+startButton.addEventListener('click', function() {
+    setTimeout(function() {
+        heading1.innerText = "Heading Changed";
+        heading1.style.color = "green";
+        console.log("heading Changed")
+    }, 3000)    
+})
 
-// //clear timeout
-// stopButton.addEventListener('click', function() {
-//     clearTimeout(heading1);
-//     console.log("Heading Stoped")
-// })
+//clear timeout
+stopButton.addEventListener('click', function() {
+    clearTimeout(heading1);
+    console.log("Heading Stoped")
+})
 
 
 
