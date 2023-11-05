@@ -26,10 +26,12 @@ function bgAutoChange() {
 startButton.addEventListener('click', bgAutoChange);
 
 
+//Stop with Clear Interval
 function stopBgChange() {
     clearInterval(intervalId);
 }
 
+//event listener on stop button
 stopButton.addEventListener('click', stopBgChange)
 
 
