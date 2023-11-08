@@ -111,7 +111,7 @@ const promiseFive = new Promise(function(resolve, reject) {
 //     console.log(response);
 // }
 
-//or
+    //or
 
 //with try catch block becasue of error handling
 async function consumePromiseFive() {
