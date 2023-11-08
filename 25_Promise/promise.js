@@ -62,6 +62,8 @@
 
 
 
+
+
 // /**** promise with .then() .catch() and .finally() ****/
 // const promiseFour = new Promise(function(resolve, reject) {
 //     setTimeout(function() {
@@ -91,36 +93,63 @@
 
 
 
-/**** consuming promise with async ****/
-const promiseFive = new Promise(function(resolve, reject) {
-    setTimeout(function() {
 
-        let error = true;    //true or false
 
-        if(!error) {
-            resolve({name: "JavaScript", password: "123"});
-        } else {
-            reject("ERROR: JS went wrong");
-        }
-    }, 1000)
-})
+// /**** consuming promise with async ****/
+// const promiseFive = new Promise(function(resolve, reject) {
+//     setTimeout(function() {
 
-//  //direct function
+//         let error = true;    //true or false
+
+//         if(!error) {
+//             resolve({name: "JavaScript", password: "123"});
+//         } else {
+//             reject("ERROR: JS went wrong");
+//         }
+//     }, 1000)
+// })
+
+// //  //direct function
+// // async function consumePromiseFive() {
+// //     const response = await promiseFive;
+// //     console.log(response);
+// // }
+
+//     //or
+
+// //with try catch block becasue of error handling
 // async function consumePromiseFive() {
-//     const response = await promiseFive;
-//     console.log(response);
+//     try {   //try catch block
+//         // const response = await promiseFive;
+//         console.log(await promiseFive);
+//     } catch (error) {
+//         console.log(error)    //print error
+//     }
 // }
 
-    //or
+// consumePromiseFive();
 
-//with try catch block becasue of error handling
-async function consumePromiseFive() {
-    try {   //try catch block
-        // const response = await promiseFive;
-        console.log(await promiseFive);
-    } catch (error) {
-        console.log(error)    //print error
-    }
-}
 
-consumePromiseFive();
+
+
+
+
+
+
+
+
+/******* Use Api with Fetch *******/
+const hittingApi = fetch('https://randomuser.me/api/')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => console.log(error))
+
+
+
+// .then((response) => {
+//     return response.json()
+// })
