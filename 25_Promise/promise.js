@@ -139,7 +139,7 @@
 
 
 /******* Use Api with Fetch *******/
-const hittingApi = fetch('https://randomuser.me/api/')
+const hittingApi = fetch('https://api.github.com/users/arbazzkhann')
 .then((response) => {
     return response.json()
 })
