@@ -93,3 +93,51 @@ chaiUser.prototype.chaiPriceIncrease = function() {
 const tea = new chaiUser("Arbaz", 500)
 
 tea.chaiPriceIncrease()
+
+
+
+
+
+/*****************************************************************/
+
+// Define a constructor function
+function Animal(name, sound) {
+    this.name = name;
+    this.sound = sound;
+  }
+  
+  // Add a method to the prototype of Animal
+  Animal.prototype.makeSound = function () {
+    console.log(this.sound);
+  };
+  
+  // Create an instance of Animal
+  let cat = new Animal('Cat', 'Meow');
+  
+  // Call the method from the prototype
+  cat.makeSound(); // Outputs: "Meow"
+  
+  // Create another instance of Animal
+  let dog = new Animal('Dog', 'Woof');
+  
+  // Call the method from the prototype
+  dog.makeSound(); // Outputs: "Woof"
+
+
+
+
+/******************** Prectice ********************/
+function Animal(name, sound) {
+  this.name = name;
+  this.sound = sound;
+}
+
+Animal.prototype.playSound = function() {
+  console.log(this.sound)
+}
+
+let mouse = new Animal("mouse", "mmm");
+let cow = new Animal("mouse", "moo");
+
+mouse.playSound()
+cow.playSound()
