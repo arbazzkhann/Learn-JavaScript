@@ -1,80 +1,42 @@
-// let myFirstPromise = new Promise(function(resolve, reject) {
-//     setTimeout(function() {
-//         console.log("Async Task Complete.");
-//         resolve();
-//     }, 1000)
-// });
+//prectice this and new
 
 
-// myFirstPromise.then(function() {
-//     console.log("promise consumed");
-// })
+// function Animal(name, sound) {
+//     this.name = name;
+//     this.sound = sound;
+// }
+
+// Animal.prototype.makeSound = function() {
+//     console.log(this.sound);
+// }
+
+// let cat = new Animal("cat", "mew");
+// let dog = new Animal("cat", "wof");
 
 
-
-// new Promise(function(resolve, reject) {
-//     setTimeout(function() {
-//         console.log("Async task completed");
-//         resolve();
-//     }, 1000);
-// }).then(function() {
-//     console.log("Promise consumed.");
-// })
-
-
-
-// let mySecondPromise = new Promise(function(resolve, reject) {
-//     setTimeout(function() {
-//         console.log("Async Task Complete.")
-//     }, 1000);
-
-//     let myObj = {
-//         id: "ak1234",
-//         pass: "123400"
-//     };
-
-//     resolve(myObj);
-
-// })
-
-// mySecondPromise.then(function(idPass) {
-//     console.log(idPass)
-// })
+// cat.makeSound()
+// dog.makeSound()
 
 
 
 
-// const myFourthPromise = new Promise(function(resolve, reject) {
-//     let error = false;
 
-//     if(!error) {
-//         resolve({id: 101, password: 22202});
-//     } else {
-//         reject("ERROR: Something went wrong.");
-//     }
-// })
+Object.prototype.arbaz = function() {
+    console.log("Hello my name is Arbaz and i am every where.");
+}
 
-// myFourthPromise.then(function(idPass) {
-//     console.log(idPass);
-//     return idPass.password;
-// }).then(function(pass) {
-//     console.log(pass);
-// }).catch(function(error) {
-//     console.log(error);
-// }).finally(function() {
-//     console.log("Promised consumed or rejectd.");
-// })
+
+// Object.arbaz();
 
 
 
+let myObj = {
+    name: "ak",
+    id: 1010,
+    pass: "hhhh111"
+}
 
-const myLastPromise = new Promise(function(resolve, reject) {
-    error = false;
 
-    if(!error) {
-        resolve({id: 120, password: 2202003121});
-    } else {
-        reject("ERROR: Something went wrong.");
-    }
-})
+myObj.arbaz()
 
+Array().arbaz()

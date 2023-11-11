@@ -10,12 +10,17 @@
 
 //create a object which return true length of string
 
+String.prototype.trueLength = function() {
+    console.log(`The true length is ${this.trim().length}`);
+}
+
+let stringName = "    ABBBBBBDDhhhhh      ";
 
 
+stringName.trueLength()   
 
 
-
-
+"MMA    ".trueLength()    //direct call
 
 
 
