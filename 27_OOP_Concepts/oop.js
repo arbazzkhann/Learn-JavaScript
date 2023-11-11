@@ -27,7 +27,7 @@
 
 /********* '.this' Prectice and 'new' Keywork *********/
 //new: new keyword is a constructor and it gives a new instance.
-//this: .this target current context.
+//this: .this target current execution context.
 
 function user(username, id, password) {
     this.username = username;
