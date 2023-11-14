@@ -4,6 +4,16 @@
 /***************************************************************************************/
 /*********************************** call and this *************************************/
 
+/*
+**Call is a function that helps you to change the context of the invoking function.
+
+**In other words, it helps you to replace the value of 'this' inside a function with
+whatever value you want.
+
+*/
+
+
+
 
 // function setUsername(username) {
 //    this.username = username;         
