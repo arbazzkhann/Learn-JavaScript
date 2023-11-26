@@ -1,42 +1,39 @@
-//prectice this and new
+// /**
+//  * @return {null|boolean|number|string|Array|Object}
+//  */
 
+// let nums = [null, {}, 3]; 
 
-// function Animal(name, sound) {
-//     this.name = name;
-//     this.sound = sound;
-// }
+// Array.prototype.last = function(arr) {
 
-// Animal.prototype.makeSound = function() {
-//     console.log(this.sound);
-// }
+//     if(arr.lenth != null) {
+//         let lastElement = arr.length - 1;
+//         return arr[lastElement]
+//     } else {
+//         return -1;
+//     }
 
-// let cat = new Animal("cat", "mew");
-// let dog = new Animal("cat", "wof");
+// };
 
-
-// cat.makeSound()
-// dog.makeSound()
-
-
-
-
-
-Object.prototype.arbaz = function() {
-    console.log("Hello my name is Arbaz and i am every where.");
-}
-
-
-// Object.arbaz();
+// console.log(Array.last(nums));
 
 
 
-let myObj = {
-    name: "ak",
-    id: 1010,
-    pass: "hhhh111"
-}
 
-
-myObj.arbaz()
-
-Array().arbaz()
+if (!Array.prototype.last) {
+    Array.prototype.last = function() {
+      if (this.length === 0) {
+        return -1;
+      } else {
+        return this[this.length - 1];
+      }
+    };
+  }
+  
+  // Example 1
+  let nums1 = [null, {}, 3];
+  console.log(nums1.last()); // Output: 3
+  
+  // Example 2
+  let nums2 = [];
+  console.log(nums2.last()); // Output: -1
