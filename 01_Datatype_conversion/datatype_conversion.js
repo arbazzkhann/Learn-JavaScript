@@ -32,7 +32,8 @@ console.log(booleanIsLoggedIn);
 
 
 /************************ Symbol ***********************/
-//Symbol is unique premitive data tyle
+//Symbol is unique premitive data type.
+// with the help of 'symbol' data type we can create unique keys.
 
 let sym1 = Symbol("arbaz")
 let sym2 = Symbol("arbaz")
