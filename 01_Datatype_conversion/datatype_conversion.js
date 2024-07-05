@@ -31,4 +31,12 @@ console.log(isLoggedIn);
 console.log(booleanIsLoggedIn);
 
 
-/************************ Converting datatype to "" ***********************/
+/************************ Symbol ***********************/
+//Symbol is unique premitive data tyle
+
+let sym1 = Symbol("arbaz")
+let sym2 = Symbol("arbaz")
+
+// Both sym1 and sym2 are unique
+console.log(sym1 == sym2);
+console.log(sym1 === sym2);
