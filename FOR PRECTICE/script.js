@@ -15,6 +15,11 @@ const fetchData = fetch('https://api.github.com/users/hiteshchoudhary')
   button.setAttribute('href', `https://github.com/${userName}`);
   button.setAttribute('target', '_blank')
   
+
+  //Another way with addEventListener
+  // button.addEventListener('click', () => {
+  //   window.open(data.html_url, "_blank")
+  // })
 })
 
 
