@@ -40,6 +40,7 @@ myNewObject.email = "arbazkhan@google.com";  //updating email
 console.log(myNewObject["email"]);  //output => arbazkhan@google.com
 
 //***********(Object.freeze) Freezing Values ***********/
+//*********** We Can not make changes in Object after freeze ****/
 Object.freeze(myNewObject);  //freezing object
 
 myNewObject.email = "arbazkhan@amazon.com";  //updating email
