@@ -49,9 +49,9 @@ function checkGuess(guess) {
         displayMessage(`You Guessed it Right`);
         endGame();
     } else if(guess < randomNumber) {
-        displayMessage(`Number is TOOOO Low`);
+        displayMessage(`Number बढ़ाओ`);
     } else if (guess > randomNumber) {
-        displayMessage(`Number is TOOOO High`);
+        displayMessage(`Number कम करो`);
     }
 }
 
