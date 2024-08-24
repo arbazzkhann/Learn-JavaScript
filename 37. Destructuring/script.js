@@ -63,3 +63,15 @@ function printer({name, age, address: {city}}) {
 
 
 printer(myObj)
+
+
+/*********************** Destructuring array with function ***********************/
+
+const myArr = ['Superman', "Batman", "Spiderman", "Ironman", "Thor", "Thanos", "Black Adam", "Flash", "Black Panther"];
+
+function printArr([superHero1, , , , , superHeroN]) {
+    console.log(superHero1);
+    console.log(superHeroN);
+}
+
+printArr(myArr)
