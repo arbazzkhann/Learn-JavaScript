@@ -43,3 +43,23 @@ const {second} = city;
 
 
 console.log(first, second)
+
+
+/*********************** Destructuring with function ***********************/
+
+const myObj = {
+    name: "Arbaz",
+    age: 21,
+    address: {
+        city: "Mayur Vihar",
+        state: "New Delhi"
+    },
+    phone: +918700056482
+}
+
+function printer({name, age, address: {city}}) {
+    console.log(`Your Name is ${name}, age is ${age} and you are from ${city}`);
+}
+
+
+printer(myObj)
