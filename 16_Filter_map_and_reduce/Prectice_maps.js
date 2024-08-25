@@ -2,7 +2,7 @@
 /*
 **Maps makes a new array
 
-Syntax: _array(function(value) {
+Syntax: _array.map(function(value) {
     *operation_with_value
 })
 
