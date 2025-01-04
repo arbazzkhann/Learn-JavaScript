@@ -11,7 +11,7 @@
         // 6. Bigint
         // 7. Undefined 
 
-//Head : ----works on Non-Premitive Datatypes.
+//Heap : ----works on Non-Premitive Datatypes.
 // ----It Give Reference of Original Variable. 
         // 1. Objects
         // 2. Arrays
