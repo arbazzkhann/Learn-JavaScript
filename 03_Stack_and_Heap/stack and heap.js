@@ -50,11 +50,11 @@ console.log(userTwo);
 
 /**************************** Hindi me Summary ***************************     
 
-Stack : Stack copy banata hai original variable ki and jab jam uski values change ya edit krte
+Stack : Stack copy banata hai original variable ki and jab ham uski values change ya edit krte
         hai to original values me koi farak nhi padta.
 
 Heap :  Heap variable ko copy nhi krta copy variable ko original variable ka reference de deta
-        hai. jab kam copy variable me kuch bhi change krte hai to vo original variable me bhi
-        changes krta hai.
+        hai. jab ham copy variable me kuch bhi change krte hai to vo original variable me bhi
+        changes ho jata hai.
 
 */
