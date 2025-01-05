@@ -1,4 +1,5 @@
-const digits = new Number(10000000);
+let originalArray = ["Spiderman", "Superman", "Ironman", "Batman"];
 
-console.log(digits.toLocaleString('en-US'));  //Print number as follows on US Standards
-console.log(digits.toLocaleString('en-IN')); //Print Number as Indian Standards
+let splicedArray = originalArray.splice(1,2);    
+console.log(splicedArray);       //spliced Array
+console.log("C", originalArray);   //original Array
