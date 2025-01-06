@@ -1,13 +1,8 @@
-let myArr = [23, 4, 5, 43, 2, 423, "Aman", "Gupta", 79]
+//spread operator ...
 
-myArr.unshift(9,8)
+let myArr = ["Superman", "Batman", "Flash"];
+let myArr2 = ["Thor", "Iron Man", "Loki", "Hulk"];
 
+const finalArray = [...myArr, ...myArr2];
 
-console.log(myArr)
-
-myArr.shift()
-myArr.shift()
-myArr.shift()
-myArr.shift()
-
-console.log(myArr)
+console.log(finalArray);
