@@ -1,9 +1,26 @@
-const propertObject = {
-    name: "super man",
-    id: "user122",
-    email: "superman@google.com",
-    isLoggedIn: true,
+//Rest parameters
+
+const returnTotalPrice = (...price) => {
+    
+    let sum = 0;
+
+    for(let i = 0; i < price.length; i++) {
+        sum = sum + price[i];
+    }
+
+    return sum;
+
 }
 
-console.log(propertObject.hasOwnProperty("isLoggedIn")); //output => true
-console.log(propertObject.hasOwnProperty("isLoggedOut")); //output => false
+
+let aata = 300;
+let daal = 450;
+let chawal = 360;
+let dalia = 120;
+let makkhan = 360;
+
+const totalPrice = returnTotalPrice(aata, daal, chawal, dalia, makkhan);
+
+console.log(totalPrice)
+
+

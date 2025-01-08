@@ -29,7 +29,7 @@ console.log(signin);
 
 
 
-/*************** Rest Operator **************/
+/*************** Rest Parameters **************/
 //Rest Operator converts arguments into Array
 
 /*
