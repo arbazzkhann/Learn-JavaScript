@@ -1,18 +1,5 @@
-// this keyword and current context
+// IIFE ( Immediately Invoked Function Expressions) Function 
 
-let myObj = {
-    name: "Arbaz",
-    price: 399,
-    welcomeMessage: function() {
-        // console.log(this)
-        function a() {
-            console.log(this)
-        }
-
-        a()
-    }
-    
-}
-
-myObj.welcomeMessage()
-console.log(this)
+(function myFunc(name) {
+    console.log(`Hello ${name}`)
+})("Arbaz")
