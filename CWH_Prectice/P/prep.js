@@ -1,8 +1,8 @@
-//for in loop
+//Map
 
-const myArr = "Shubham Kumar";
+const myMap = new Map();
 
-for (let i in myArr) {
-    console.log(i)
-}
+myMap.set("KR", "Koria");
+myMap.set("IN", "India");
 
+console.log(myMap)
