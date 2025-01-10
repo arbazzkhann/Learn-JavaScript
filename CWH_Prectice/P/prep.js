@@ -1,5 +1,8 @@
-// IIFE ( Immediately Invoked Function Expressions) Function 
+//for of loop
 
-(function myFunc(name) {
-    console.log(`Hello ${name}`)
-})("Arbaz")
+const myArr = "Shubham Kumar";
+
+for (let i of myArr) {
+    console.log(i)
+}
+
