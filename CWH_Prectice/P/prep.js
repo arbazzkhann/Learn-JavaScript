@@ -1,8 +1,7 @@
-//Map
+//for each loop
 
-const myMap = new Map();
+const myArr = ["Delhi", "Uttar Pradesh", "Rajsthan", "Telangana", "Bihar"]
 
-myMap.set("KR", "Koria");
-myMap.set("IN", "India");
-
-console.log(myMap)
+myArr.forEach(function (val, index, arr) {
+    console.log(index+1 , ":- " +  val);
+})
