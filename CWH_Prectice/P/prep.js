@@ -1,8 +1,8 @@
-//for of loop
+//for in loop
 
 const myArr = "Shubham Kumar";
 
-for (let i of myArr) {
+for (let i in myArr) {
     console.log(i)
 }
 
