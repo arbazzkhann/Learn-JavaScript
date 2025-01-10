@@ -1,26 +1,18 @@
-//Rest parameters
+// this keyword and current context
 
-const returnTotalPrice = (...price) => {
-    
-    let sum = 0;
+let myObj = {
+    name: "Arbaz",
+    price: 399,
+    welcomeMessage: function() {
+        // console.log(this)
+        function a() {
+            console.log(this)
+        }
 
-    for(let i = 0; i < price.length; i++) {
-        sum = sum + price[i];
+        a()
     }
-
-    return sum;
-
+    
 }
 
-
-let aata = 300;
-let daal = 450;
-let chawal = 360;
-let dalia = 120;
-let makkhan = 360;
-
-const totalPrice = returnTotalPrice(aata, daal, chawal, dalia, makkhan);
-
-console.log(totalPrice)
-
-
+myObj.welcomeMessage()
+console.log(this)
