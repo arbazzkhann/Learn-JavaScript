@@ -8,7 +8,7 @@ Callback Function : A callback is a function passed as an argument to another fu
 
 /******************************************************************/
 /************************** (.filter) with Array *************************/
-// filter is return values.
+// filter is returning the values.
 // but foreach not return any value therefore we user filter.
 
 /*
