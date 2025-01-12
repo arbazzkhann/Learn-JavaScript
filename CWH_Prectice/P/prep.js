@@ -33,8 +33,16 @@ let myClassObject = [
     }
 ]
 
-myClassObject.filter((i) => {
-    if(i.class == 9) {
-        console.log(i.name);
-    }
-})
+const c = 10;
+
+myClassMates = myClassObject.filter((i) => {
+        return (i.class == c)
+    })
+
+const arrLength = myClassMates.length;
+
+myClassMates.forEach(element => {
+    console.log(`The students of class ${c}th is`, element.name)
+});
+
+console.log(`Length of the array is ${arrLength}`)
