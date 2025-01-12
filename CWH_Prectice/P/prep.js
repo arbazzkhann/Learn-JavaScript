@@ -1,6 +1,6 @@
-const myOriginalArray = [2,6,7,5,8,9,4];
+const root = document.querySelector('#root');
 
-const influencedArray = myOriginalArray.map((x) => x.toString(2));
+const h1 = document.createElement('h1');
+h1.textContent = "Hello world i am from javascript.";
 
-
-console.log(influencedArray)
+root.append(h1)
