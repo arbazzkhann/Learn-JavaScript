@@ -1,48 +1,30 @@
-//filter
+//reduce
 
-let myClassObject = [
+let myClassObjects = [
     {
-        name: "Arvind",
-        class: 10,
-        rollNo: 1
+        name: "English",
+        price: 579
     },
     {
-        name: "Vivek",
-        class: 11,
-        rollNo: 2
+        name: "Hindi",
+        price: 189
     },
     {
-        name: "Manish",
-        class: 9,
-        rollNo: 3
+        name: "Maths",
+        price: 349
     },
     {
-        name: "Sourav",
-        class: 12,
-        rollNo: 4
+        name: "Science",
+        price: 399
     },
     {
-        name: "Saquib",
-        class: 9,
-        rollNo: 5
-    },
-    {
-        name: "Suman",
-        class: 10,
-        rollNo: 6
+        name: "Social Science",
+        price: 299
     }
 ]
 
-const c = 10;
+const myFinalPrice = myClassObjects.reduce((accumulator, currentPrice) => {
+    return accumulator + currentPrice.price
+}, 0);
 
-myClassMates = myClassObject.filter((i) => {
-        return (i.class == c)
-    })
-
-const arrLength = myClassMates.length;
-
-myClassMates.forEach(element => {
-    console.log(`The students of class ${c}th is`, element.name)
-});
-
-console.log(`Length of the array is ${arrLength}`)
+console.log(myFinalPrice)
