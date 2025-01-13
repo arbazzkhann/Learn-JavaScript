@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .mainHeading {
+            background-color: yellow;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding-left: 20px;
+        }
+        
+        .bulbDiv {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;       
+            font-weight: bolder;
+            margin: 10px;
+        }
+
+        .switchButton {
+            margin-left: 23px;
+        }
+    </style>
 </head>
 <body>
-    <div id="root"></div>
+    <h1 class="mainHeading">Hello</h1>
+    <p class="para1">Lorem ipsum dolor sit amet.</p>
+    <div class="bulbDiv">OFF</div>
+    <button class="switchButton">ON / OFF</button>
 </body>
 <script src="prep.js"></script> 
 </html>
