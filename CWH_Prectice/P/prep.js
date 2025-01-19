@@ -1,17 +1,18 @@
-const red = document.querySelector('.red');
-const yellow = document.querySelector('.yellow');
-const orange = document.querySelector('.orange');
-const grey = document.querySelector('.grey');
+//promises
 
-red.addEventListener('click', () => {
-    document.body.style.backgroundColor = "red";
+const myPromise = new Promise((res, rej) => {
+    if(true) {
+        return res();
+    }
+    else {
+        return rej()
+    }
 })
-yellow.addEventListener('click', () => {
-    document.body.style.backgroundColor = "yellow";
+
+myPromise
+.then(function(c) {
+    console.log(`Resolve ho gaya.`)
 })
-orange.addEventListener('click', () => {
-    document.body.style.backgroundColor = "orange";
-})
-grey.addEventListener('click', () => {
-    document.body.style.backgroundColor = "grey";
+.catch(function() {
+    console.log("Resolve nhi hua.")
 })
