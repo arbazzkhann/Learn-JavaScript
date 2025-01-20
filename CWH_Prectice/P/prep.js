@@ -12,7 +12,7 @@ async function fetchRandomData() {
     const firstName = data.results[0].name.first;
     const lastName = data.results[0].name.last;
 
-    userFullName = `${title} ${firstName} ${lastName}`
+    userFullName += `${title} ${firstName} ${lastName}`
 
     nameHeading.innerText = userFullName
 
@@ -20,5 +20,4 @@ async function fetchRandomData() {
 
 fetchRandomData();
 
-nameHeading.innerText = userFullName
-
+// nameHeading.innerText = userFullName
