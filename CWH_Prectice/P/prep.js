@@ -1,18 +1,19 @@
-//promises
+//promise
 
-const myPromise = new Promise((res, rej) => {
+const myNewPromise = new Promise((res, rej) => {
     if(true) {
-        return res();
+        return res("Resolve ho gaya.");
     }
     else {
-        return rej()
+        return rej("Resolve nhi hua.");
     }
 })
 
-myPromise
-.then(function(c) {
-    console.log(`Resolve ho gaya.`)
+
+myNewPromise
+.then((response)=> {
+    console.log(response);
 })
-.catch(function() {
-    console.log("Resolve nhi hua.")
+.catch((response) => {
+    console.log(response);
 })
