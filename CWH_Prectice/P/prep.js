@@ -1,28 +1,14 @@
-//promise 2
+//async await
 
-const myNewPromise = new Promise((res, rej) => {
-    return res("Sabse pehle ghar aao.");
-})
+async function fetchRandomData() {
+    const rowData = await fetch('https://randomuser.me/api/');
+    const data = await rowData.json();
 
-myNewPromise
-.then((data) => {
-    console.log(data);
-    return new Promise((res, rej) => {
-        return res("Gate kholo aur gate lagao.");
-    })
-})
-.then((data) => {
-    console.log(data);
-    return new Promise((res, rej) => {
-        return res("Khana pakao, khana khao.");
-    })
-})
-.then((data) => {
-    console.log(data);
-    return new Promise((res, rej) => {
-        return res("Sojao kyunki tum thak chuke ho.");
-    })
-})
-.then((data) => {
-    console.log(data);
-})
+    const title = data.results[0].name.title;
+    const firstName = data.results[0].name.first;
+    const lastName = data.results[0].name.last;
+
+    console.log(`Full Name of user is: ${title} ${firstName} ${lastName}`)
+}
+
+fetchRandomData();
