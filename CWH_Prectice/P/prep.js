@@ -1,5 +1,9 @@
 //async await
 
+let nameHeading = document.querySelector('.nameHeading');
+
+let userFullName = '';
+
 async function fetchRandomData() {
     const rowData = await fetch('https://randomuser.me/api/');
     const data = await rowData.json();
@@ -8,7 +12,13 @@ async function fetchRandomData() {
     const firstName = data.results[0].name.first;
     const lastName = data.results[0].name.last;
 
-    console.log(`Full Name of user is: ${title} ${firstName} ${lastName}`)
+    userFullName = `${title} ${firstName} ${lastName}`
+
+    nameHeading.innerText = userFullName
+
 }
 
 fetchRandomData();
+
+nameHeading.innerText = userFullName
+
