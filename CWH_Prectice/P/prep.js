@@ -1,23 +1,22 @@
-//async await
+//OOPs (Object Oriented Programming) Concept in JS
 
-let nameHeading = document.querySelector('.nameHeading');
 
-let userFullName = '';
+const myObj = {
+    name: "Original Name",
+    age: 0,
+    state: 'delhi',
 
-async function fetchRandomData() {
-    const rowData = await fetch('https://randomuser.me/api/');
-    const data = await rowData.json();
+    printDetails: function(username, age, state) {
+        this.username = username;
+        this.age = age;
+        this.state = state;
 
-    const title = data.results[0].name.title;
-    const firstName = data.results[0].name.first;
-    const lastName = data.results[0].name.last;
+        return this;
 
-    userFullName += `${title} ${firstName} ${lastName}`
-
-    nameHeading.innerText = userFullName
-
+    }
 }
 
-fetchRandomData();
+const user1 = new myObj.printDetails("Arbaz", 21, "delhi")
+const user2 = new myObj.printDetails("Manav", 26, "Bihar")
 
-// nameHeading.innerText = userFullName
+alert(`Hello ${user1.username}, you are from ${user1.state} and your age is ${user1.age}`)
