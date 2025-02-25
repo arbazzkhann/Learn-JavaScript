@@ -1,4 +1,6 @@
-let a = 10;
-let b = 20;
+let a = 11, b=22;
+let c = a + b + a++ + b++ + ++a + ++b;
 
-module.exports = {a, b};
+console.log(a)
+console.log(b)
+console.log(c)
