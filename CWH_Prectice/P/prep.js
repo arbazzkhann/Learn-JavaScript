@@ -11,10 +11,10 @@ else{
         console.log("Number should be greater then 0.");
     }
     else {
-        let sum = 0;
-        for(let i = 0; i <= n; i++) {
-            sum += i;
+        let fact = 1;
+        for(let i = 1; i <= n; i++) {
+            fact *= i;
         }
-        console.log(`The sum of 1 to ${n} natural number is: ${sum}`);
+        console.log(`The sum of factorials of natural number ${n} is: ${fact}`);
     }
 }
