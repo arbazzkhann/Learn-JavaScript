@@ -1,5 +1,5 @@
 //factors of a number:
-
+//Video link: https://youtu.be/H88hkdA02tY?t=2574
 
 const n = Number(prompt("Enter number"));
 
