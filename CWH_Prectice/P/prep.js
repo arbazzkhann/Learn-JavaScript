@@ -1,4 +1,4 @@
-//Find the sum of n natural number
+//Find the sum of factorial
 
 
 const n = Number(prompt("Enter number"));
