@@ -1,12 +1,19 @@
-let myArr = [];
+let sum = 0;
 
-while(true) {
-    let arrVal = prompt("Enter value, for close type 'exit'.");
-    
-    if(arrVal === 'exit') {
+while (true) {
+    let input = prompt("Enter Number: ");
+
+    if (input == "exit") {
         break;
     }
-    myArr.push(arrVal);
+
+    let myVal = Number(input);
+
+    if (!isNaN(myVal)) {
+        sum += myVal;
+    } else {
+        console.log("Invalid input! Please enter a number.");
+    }
 }
 
-console.log(myArr);
+console.log("Total Sum:", sum);
