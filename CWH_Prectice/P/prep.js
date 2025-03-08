@@ -1,5 +1,5 @@
-//factors of a number:
-//Video link: https://youtu.be/H88hkdA02tY?t=2574
+//Find number is "Prime" or "Not"
+//Video link: https://youtu.be/H88hkdA02tY?t=3042
 
 const n = prompt("Enter number");
 
@@ -10,17 +10,14 @@ else {
     if(isNaN(n)) {
         console.log("Enter Valid input, number should be in integer format.");
     }
-    else{
-        if(n <= 0 ) {
-            console.log("Number should be greater then 0.");
-        }
-        else {
-            for(let i = 1; i < Math.floor(n/2); i++) {
-                if(n%i == 0) {
-                    console.log(`${i}: ${i} X ${n/i}`);
-                }
+    else {
+        for(let i = 2; i <= Math.floor(n/2); i += 2) {
+            if(n%i === 0) {
+                console.log("Prime nhi hai.");
+                break;
             }
-            console.log(`${n}: ${n} X ${1}`);
+            console.log("Prime hai.");
         }
     }
 }
+
