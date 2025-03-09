@@ -1,19 +1,16 @@
-let sum = 0;
+//Reversing the user input number
 
-while (true) {
-    let input = prompt("Enter Number: ");
+let input = prompt("Enter number");
 
-    if (input == "exit") {
-        break;
+if(!isNaN(input)) {
+    let rev = 0;
+    while(input > 0) {
+        let rem = input % 10;
+        rev = rev * 10 + rem;
+        input = Math.floor(input / 10);
     }
-
-    let myVal = Number(input);
-
-    if (!isNaN(myVal)) {
-        sum += myVal;
-    } else {
-        console.log("Invalid input! Please enter a number.");
-    }
+    console.log(rev);
 }
-
-console.log("Total Sum:", sum);
+else {
+    console.log("Enter valid input.");
+}
