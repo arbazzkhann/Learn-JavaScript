@@ -18,7 +18,7 @@ let myArr = [20, 100, 65, 120, 54, 23, 234, 23, 54, 223, 53,
 let max = myArr[0];
 
 for(let i = 1; i <= myArr.length; i++) {
-    if(myArr[i] < max) {
+    if(myArr[i] > max) {
         max = myArr[i];
     }
 }
