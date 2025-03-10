@@ -1,28 +1,25 @@
-//String number
+// guess the number
+// Video link: https://youtu.be/H88hkdA02tY?t=6041
 
-let input = prompt("Enter number: ");
 
-let copyInput = input;
+let randomNumber = Math.floor(((Math.random()) * 100) + 1);
 
-if(!isNaN(input)) {
-    let sum = 0;
-    while(input > 0) {
-        let fact = 1;
-        let rem = input % 10;
-        for(let i = 1; i <= rem; i++) {
-            fact *= i;
-        }
-        // sum = sum + fact;
-        sum += fact;
-        input = Math.floor(input / 10);
-    }   
-    if(sum == copyInput) {
-        console.log(`${copyInput} is a strong number.`);
+let guess = 0; //only for initialization
+
+guessNumber(guess)
+
+function guessNumber(guess) {
+    while(guess !== randomNumber) {
+        guess = Number(prompt("Guess the number"));
+        if(isNaN(guess) || guess < 1 || guess > 100){
+            console.log("try again, number should be 1 to 100");
+            continue;
+        };
+        if(guess > randomNumber) console.log("too high");
+        if(guess < randomNumber) console.log("too low");
+        if(guess == randomNumber) {
+            console.log(`Congratulations🎉 number is ${guess}`);
+            break;
+        };
     }
-    else {
-        console.log(`Number is: ${copyInput} and sum: ${sum}, therefore its not a strong number.`);
-    }
-}
-else {
-    console.log("Invalid input.");
 }
