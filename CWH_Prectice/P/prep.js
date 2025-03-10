@@ -1,25 +1,26 @@
-// guess the number
-// Video link: https://youtu.be/H88hkdA02tY?t=6041
+// Finding max number in array
+// Video link: https://youtu.be/CW3gjRgL4w4?t=2076
 
 
-let randomNumber = Math.floor(((Math.random()) * 100) + 1);
+// let myArr = [10, 20, 100, 65, 120, 54, 23, 234, 23, 54, 223, 53];
+let myArr = [20, 100, 65, 120, 54, 23, 234, 23, 54, 223, 53,
+    892, 347, 781, 456, 982, 134, 657, 843, 290, 561, 478, 912, 655, 120, 834, 401, 249, 777, 
+    901, 234, 876, 543, 290, 111, 765, 890, 345, 612, 739, 258, 984, 372, 849, 567, 943, 201, 
+    387, 629, 482, 915, 776, 302, 634, 845, 267, 529, 658, 190, 812, 376, 930, 743, 456, 982,
+    214, 638, 754, 892, 501, 693, 247, 385, 967, 528, 314, 876, 439, 215, 765, 999, 872, 304,
+    689, 561, 790, 348, 127, 953, 630, 824, 456, 279, 987, 375, 502, 149, 763, 890, 217, 658,
+    432, 908, 741, 529, 356, 803, 10, 271, 649, 758, 982, 340, 917, 258, 689, 543, 821, 209, 670,
+    893, 275, 634, 947, 318, 756, 210, 489, 876, 543, 269, 901, 432, 690, 845, 378, 152, 793,
+    624, 507, 572, 819, 364, 275, 689, 941, 573, 216, 798, 563, 902, 438, 712, 984, 376, 527, 
+    850, 231, 470, 932, 615, 347, 872, 431, 689, 578, 926, 314, 792, 650, 389, 175, 923, 842,
+    208, 697, 564, 387, 965, 471, 829, 648];
 
-let guess = 0; //only for initialization
+let max = myArr[0];
 
-guessNumber(guess)
-
-function guessNumber(guess) {
-    while(guess !== randomNumber) {
-        guess = Number(prompt("Guess the number"));
-        if(isNaN(guess) || guess < 1 || guess > 100){
-            console.log("try again, number should be 1 to 100");
-            continue;
-        };
-        if(guess > randomNumber) console.log("too high");
-        if(guess < randomNumber) console.log("too low");
-        if(guess == randomNumber) {
-            console.log(`Congratulations🎉 number is ${guess}`);
-            break;
-        };
+for(let i = 1; i <= myArr.length; i++) {
+    if(myArr[i] < max) {
+        max = myArr[i];
     }
 }
+
+console.log(max);
