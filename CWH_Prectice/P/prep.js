@@ -15,12 +15,12 @@ let myArr = [20, 100, 65, 120, 54, 23, 234, 23, 54, 223, 53,
     850, 231, 470, 932, 615, 347, 872, 431, 689, 578, 926, 314, 792, 650, 389, 175, 923, 842,
     208, 697, 564, 387, 965, 471, 829, 648];
 
-let max = myArr[0];
+let min = myArr[0];
 
 for(let i = 1; i <= myArr.length; i++) {
-    if(myArr[i] > max) {
-        max = myArr[i];
+    if(myArr[i] < min) {
+        min = myArr[i];
     }
 }
 
-console.log(max);
+console.log(min);
