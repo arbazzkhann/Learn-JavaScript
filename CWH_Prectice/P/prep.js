@@ -1,13 +1,6 @@
-let len = 0;
+let person = { name: "Arbaz", age: 25 };
+let jsonString = JSON.stringify(person); // Convert object to string
+console.log(jsonString); // '{"name":"Arbaz","age":25}'
 
-const myArr = [10,2,23,12,3,12,3,21,213,21,3,21,321,2]
-
-let i = 0;
-while(myArr[i]) {
-    if(myArr[i]) {
-        len++;
-    }
-    i++;
-}
-
-console.log(len)
+let jsonObject = JSON.parse(jsonString); // Convert string back to object
+console.log(jsonObject.name); // "Arbaz"
