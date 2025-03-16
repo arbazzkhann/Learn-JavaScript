@@ -1,6 +1,7 @@
-let person = { name: "Arbaz", age: 25 };
-let jsonString = JSON.stringify(person); // Convert object to string
-console.log(jsonString); // '{"name":"Arbaz","age":25}'
+//weakmap
 
-let jsonObject = JSON.parse(jsonString); // Convert string back to object
-console.log(jsonObject.name); // "Arbaz"
+let weakMap = new WeakMap();
+let myObj = {id: 1};
+
+weakMap.set(myObj, "This is obeject");
+console.log(weakMap.get(myObj))
