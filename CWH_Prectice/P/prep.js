@@ -1,7 +1,12 @@
-//weakmap
+function checkAge(age) {
+    if(age < 18) {
+        throw new Error("You must be 18 or older.");
+    }
+    console.log("Access Granted");
+}
 
-let weakMap = new WeakMap();
-let myObj = {id: 1};
-
-weakMap.set(myObj, "This is obeject");
-console.log(weakMap.get(myObj))
+try {
+    checkAge(16)
+} catch (error) {
+    console.log(`Error: ${error.message}`);
+}
