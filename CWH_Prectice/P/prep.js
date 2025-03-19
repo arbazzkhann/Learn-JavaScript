@@ -1,5 +1,11 @@
 function showArguments() {
-    console.log(arguments[3]);
+    let sum = 0;
+    for(let val of arguments) {
+        sum += val;
+    }
+    return sum;
 }
 
-showArguments(2,3,4,5)
+let sum = showArguments(2,3,4,5, 100);
+
+console.log(sum);
