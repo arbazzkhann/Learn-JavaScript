@@ -1,13 +1,22 @@
-//recursion
-//when a function call itself
-
-function printNum(n) {
-    if(n > 10) {
-        console.log("Done!");
-        return;
-    }
-    console.log(n);
-    printNum(n+1);  //recursive call
+//global scope
+let hello = "hello world";
+{
+    console.log(hello); //it can be access anywhere in the code;
 }
 
-printNum(1)
+
+// block scope
+{
+    const myVal = 10;
+}
+
+// console.log(myVal) //referenceError
+
+//function scope
+function myName() {
+    var myNameVar = "Arbaz";
+}
+
+// console.log(myNameVar) //referenceError
+
+
