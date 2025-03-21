@@ -1,38 +1,28 @@
-//data types :
+//object
+//Object are the premitive data type in javascript
+//Object are key-value pairs
 
-/* Learn as 'NNBBSSU'
-1. Number
-2. Null
-3. BigInt
-4. Boolean
-5. String
-6. Symbol
-7. Undefined
-*/
+//creating object
+let myObj = {
+    name: "arbaz",
+    age: 21
+};
+console.log('Object1: ', myObj);
 
-let number = 33;
-console.log(typeof(number)); //Number
+//adding new key-value pair
+myObj.city = "new delhi";
+console.log('Object2: ', myObj);
 
-let nullDataType = null; 
-console.log(typeof nullDataType); //object
-console.log(null instanceof Object); // false (null is NOT an actual object)
+//deleting key-value pair
+delete myObj.city;
+console.log('Object3: ', myObj);
 
-let bool = true;
-console.log(typeof bool); //boolean
+//updating value
+myObj.age = 22;
+console.log('Object4: ', myObj);
 
-let bigInteger = 312312638127371238n;
-console.log(typeof bigInteger); //BigInt
+//accessing with dot(.) notation
+console.log(myObj.name);
 
-let nameString = "Hello";
-console.log(typeof nameString); //String
-
-let myId = Symbol("334");
-console.log(typeof myId); //Symbol
-let myId2 = Symbol("334");
-console.log(myId === myId2); //false
-
-let undefinedData = undefined;
-console.log(typeof undefinedData); //undefined
-let score; //not defined
-console.log(typeof score)
-
+//accessing as like array
+console.log(myObj['age']);
