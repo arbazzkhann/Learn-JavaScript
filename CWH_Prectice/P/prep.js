@@ -1,18 +1,14 @@
-//Naming prectice of variables in javascript
+//lexical scope.
+//A function inside another function can access variables of their parents is known as lexical scope.
 
-//1. Allowed or good naming prectice
-let name = "Arbaz"; // always use variable names with meaning  
-let name2 = "Arbaz 2"; //
-let name_3 = "Arbaz 3";
-let $name = "Arbaz 4";
-let _name = "Arbaz 5";
+function outer() {
+    let name = "Javascript";
 
-//declare const variable as CAPITALIZE
-const NAME = "Arbaz 6";
+    function inner() {
+        console.log(name);
+    }
 
+    inner();
+}
 
-
-//2. Worst or Bad naming prectice
-// let 2Name = "Arbaz"; // syntax error
-// let x = "no name"; // no any meaning
-// let var = 50; // not allowed - syntax error (cannot use reserved keywords like function, var, for, let etc.);
+outer();
