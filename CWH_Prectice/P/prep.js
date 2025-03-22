@@ -1,19 +1,7 @@
-//Set
-//Set is a collection of unique values (no duplicates);
+let buffer = new ArrayBuffer(16);  //creates a 16-bytes buffer
 
-let set = new Set();
+let intArray = new Int32Array(buffer) //creates a typed Array from buffer
 
-set.add(10);
-set.add(20);
-set.add(30);
-set.add(50);
-
-console.log(set.size); //size of set
-console.log(set.has(20)); //true
-console.log(set.has(99)); //false
-
-set.delete(50); //deleting set element
-console.log(set.size); //size of set
-console.log(set.has(50)); //false
-
-console.log(set); //printing whole set
+intArray[0] = 42;
+console.log(intArray[9]) //undefined
+console.log(intArray[0]); //42
