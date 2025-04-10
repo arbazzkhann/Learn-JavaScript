@@ -1,26 +1,20 @@
-//day
-let day = new Date().getDay();
+const user1 = {
+  name: "Arbaz Khan",
+  age: 22,
+  getAgeYear: function () {
+    return new Date().getFullYear() - user1.age;
+  },
+};
 
-//month
-let monthNames = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+function userFunction(name, age) {
+  const user = {
+    name,
+    age,
+    getAgeYear() {
+      return new Date().getFullYear() - user.age;
+    },
+  };
+  return { user };
+}
 
-let currentMonth = new Date().getMonth(); // returns 0-11
-let month = monthNames[currentMonth];
-
-//year
-let year = new Date().getFullYear();
-
-document.querySelector("h1").innerText = `${day} ${month} ${year}`;
+console.log(userFunction("Madhav", 27).user.getAgeYear())
