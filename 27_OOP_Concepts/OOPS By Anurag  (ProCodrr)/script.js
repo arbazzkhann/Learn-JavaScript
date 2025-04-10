@@ -6,6 +6,8 @@ const user1 = {
   },
 };
 
+
+//also known as constructor
 function userFunction(name, age) {
   const user = {
     name,
