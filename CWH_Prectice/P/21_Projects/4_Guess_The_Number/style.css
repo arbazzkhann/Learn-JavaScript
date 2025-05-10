@@ -1,0 +1,51 @@
+body {
+    background-color: #212121;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: rgb(61, 60, 60);
+    margin: 20px;
+    height: 80vh;
+    width: 92vw;
+    
+}
+
+
+.heading {
+    background-color: black;
+    text-align: center;
+}
+
+.para {
+    text-align: center;
+}
+
+#textField {
+    font-size:50px;
+    margin-top: 50px;
+}
+
+.form {
+    text-align: center;
+}
+
+#guessField {
+    font-size: 15px;
+    height: 30px;
+    margin: 20px
+}
+
+#submitButton {
+    margin-top: 30px;
+    height: 40px;
+    width: 120px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+}
+
+.resultParas {
+    text-align: center;
+}
