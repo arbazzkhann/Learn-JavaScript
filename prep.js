@@ -8,4 +8,4 @@ async function fetchData() {
     console.log(`${finalName}, ${gender}`);
 }
 
-fetchData()
+fetchData();
