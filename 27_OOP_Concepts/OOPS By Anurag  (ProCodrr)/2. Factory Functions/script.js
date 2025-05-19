@@ -1,19 +1,15 @@
-function user(firstName, lastName, age) {
-    return {
-        fullName: `${firstName} ${lastName}`,
-        birthYear: function (){
-            return date.getFullYear() - age;
+function createdUser (firstName, lastName, age) {
+    const user = {
+        firstName,
+        lastName,
+        age,
+        getAgeYear () {
+            return new Date().getFullYear() - age;
         }
     }
+    return user
 }
 
-let date = new Date();
+const user1 = createdUser("Arbaz", "Khan", 22);
 
-let user1 = user("Arbaz", "Khan", 22);
-let user2 = user("Shubham", "Sharma", 24);
-let user3 = user("Madhav", "Gourav", 21);
-let user4 = user("Jatin", "Goswami", 21);
-console.log(user1.fullName);
-console.log(user2.fullName);
-console.log(user3.fullName);
-console.log(user4.fullName);
+
