@@ -1,5 +1,6 @@
-const myName = "Arbaz Khan";
 
-myName[5] = "-"  //❌ Cannot mutate
 
-console.log(myName);
+let myName = "Arbaz-Khan";
+console.log(myName.slice(-5, -1));  //Output: -Kha
+
+console.log(myName.slice(-5, 11));
