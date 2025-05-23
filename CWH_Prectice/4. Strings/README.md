@@ -1,5 +1,11 @@
 # Strings
 
+* Strings behave like **array of charactors** but it is **not array of charactors**.
+
+
+* String are **Group of Charactors** / **Combination of Charactors** / **Collection of Charactors** / **Squence of Charactos**.
+
+
 * Written in the **double quotes**:
 ```js
 const hello = "Hello";
@@ -22,4 +28,3 @@ myName[5] = "-"  //❌ Cannot mutate
 ```
 
 
-* Strings behave like **array of charactors** but it is **not array of charactors**:
