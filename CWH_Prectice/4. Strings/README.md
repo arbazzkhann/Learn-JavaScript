@@ -48,13 +48,18 @@ console.log(myName.slice(0, 6));
 console.log(myName.slice(-5, -1));  //Output: -Kha
 ```
 
-### substring()
+### substring():
 Similar like splice but **doesn't support negative indexing**.
 
 ```js
 let myName = "Arbaz-Khan";
-console.log(myName.substring(3))
+console.log(myName.substring(3))  //Output: az-Khan
 ```
 
+### toUpperCase():
+Capitalize word.
 
-
+```js
+let myName = "Arbaz-Khan";
+console.log(myName.toUpperCase());  //Output: ARBAZ-KHAN
+```
