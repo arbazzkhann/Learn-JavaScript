@@ -167,3 +167,11 @@ Replace all occurrance of sub-string.
 const myDesc = "Hello world, I am a Web Developer and Currently lerning JavaScript. JavaScript is very good language.";
 console.log(myDesc.replaceAll("JavaScript", "Python"));  //Replaces all JavaScript to Python
 ```
+
+### split(separator):
+Splits string into array.
+
+```js
+let myTitle = "Hello, I am arbaz Khan a web-developer";
+console.log(myTitle.split(" "));  //Separate string when " " comes.
+```
