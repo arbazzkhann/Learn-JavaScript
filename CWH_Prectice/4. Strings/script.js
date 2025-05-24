@@ -1,2 +1,2 @@
-const myName = "Arbaz Khan";
-console.log(myName.replace("Khan", "Saifi"));  //Output: Arbaz Saifi
+const myDesc = "Hello world, I am a Web Developer and Currently lerning JavaScript. JavaScript is very good language.";
+console.log(myDesc.replaceAll("JavaScript", "Python"));  //Replaces all JavaScript to Python

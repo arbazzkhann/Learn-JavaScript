@@ -153,8 +153,17 @@ console.log(myName.endsWith("a"));  //Output: false
 
 ### replace(old, new):
 Replace old sub-string to new sub-string.
+Replace first occurrance of sub-string.
 
 ```js
 const myName = "Arbaz Khan";
 console.log(myName.replace("Khan", "Saifi"));  //Output: Arbaz Saifi
+```
+
+### replaceAll(old, new):
+Replace all occurrance of sub-string.
+
+```js
+const myDesc = "Hello world, I am a Web Developer and Currently lerning JavaScript. JavaScript is very good language.";
+console.log(myDesc.replaceAll("JavaScript", "Python"));  //Replaces all JavaScript to Python
 ```
