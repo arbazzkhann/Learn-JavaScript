@@ -101,6 +101,14 @@ Returns ASCII Value of charactor.
 
 ```js
 let myName = "Arbaz Khan";
-console.log(myName.charCodeAt(2));   //Output: 98 (because b is at 98 in ASCII)
+console.log(myName.charCodeAt(2));  //Output: 98 (because b is at 98 in ASCII)
 ```
 
+### indexOf():
+Return index of sub-string.
+
+```js
+let myName = "Arbaz Khan";
+console.log(myName.indexOf("b"))  //Output: 2
+console.log(myName.indexOf("Khan"))  //Output: 6
+```
