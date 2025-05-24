@@ -109,8 +109,8 @@ Return index of sub-string.
 
 ```js
 let myName = "Arbaz Khan";
-console.log(myName.indexOf("b"))  //Output: 2
-console.log(myName.indexOf("Khan"))  //Output: 6
+console.log(myName.indexOf("b"));  //Output: 2
+console.log(myName.indexOf("Khan"));  //Output: 6
 ```
 
 ### lastIndexOf():
@@ -120,4 +120,14 @@ Searches right-to-left.
 ```js
 let myName = "Arbaz Khan";
 console.log(myName.lastIndexOf("a"));  //Output: 8
+```
+
+### includes(substring):
+Checks if string exists.
+return **true** or **false**.
+
+```js
+let myName = "Arbaz Khan";
+console.log(myName.includes("Khan"));  //Output: true
+console.log(myName.includes("Sharma"));  //Output: false
 ```
