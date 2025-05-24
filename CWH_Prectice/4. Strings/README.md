@@ -51,5 +51,10 @@ console.log(myName.slice(-5, -1));  //Output: -Kha
 ### substring()
 Similar like splice but **doesn't support negative indexing**.
 
+```js
+let myName = "Arbaz-Khan";
+console.log(myName.substring(3))
+```
+
 
 
