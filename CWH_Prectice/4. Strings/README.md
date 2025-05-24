@@ -71,3 +71,20 @@ Converts to Lowercase.
 let myName = "arbaz-khan";
 console.log(myName.toLowerCase())  //Output: arbaz-khan
 ```
+
+### concat():
+Contactinate string.
+
+```js
+let myName = "Arbaz";
+console.log(myName.concat("-Khan"));  //Output: Arbaz-Khan
+```
+
+### trim():
+Trim extra spaces.
+
+```js
+let myDesc = "      Hello World     ";
+console.log(myDesc.trim());  //Output: Hello World
+```
+

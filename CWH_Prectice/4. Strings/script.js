@@ -1,3 +1,3 @@
 
-let myName = "arbaz-khan";
-console.log(myName.toLowerCase())  //Output: arbaz-khan
+let myDesc = "      Hello World       ";
+console.log(myDesc.trim());
