@@ -1,3 +1,4 @@
-let myName = "Arbaz Khan";
-console.log(myName.includes("Khan"));  //Output: true
-console.log(myName.includes(" "));  //Output: false
+const name = "Arbaz Khan";
+
+console.log(name.startsWith("A"));  //Output: true
+console.log(name.startsWith("a"));  //Output: true
