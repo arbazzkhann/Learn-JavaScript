@@ -150,3 +150,11 @@ console.log(myName.endsWith("Khan"));  //Output: true
 console.log(myName.endsWith("n"));  //Output: true
 console.log(myName.endsWith("a"));  //Output: false
 ```
+
+### replace(old, new):
+Replace old sub-string to new sub-string.
+
+```js
+const myName = "Arbaz Khan";
+console.log(myName.replace("Khan", "Saifi"));  //Output: Arbaz Saifi
+```
