@@ -175,3 +175,11 @@ Splits string into array.
 let myTitle = "Hello, I am arbaz Khan a web-developer";
 console.log(myTitle.split(" "));  //Separate string when " " comes.
 ```
+
+
+## Questions of String
+Q1. Print each charactor on new file
+Q2. Print in reverse order
+Q3. Check if string is Pallindrome or not
+Q4. Toggle each charater
+Q5. Frequency of each character
