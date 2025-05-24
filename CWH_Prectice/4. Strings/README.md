@@ -141,3 +141,12 @@ console.log(name.startsWith("A"));  //Output: true
 console.log(name.startsWith("a"));  //Output: false
 ```
 
+### endsWith(substring):
+Checks if string ends with sub-string.
+
+```js
+const myName = "Arbaz Khan";
+console.log(myName.endsWith("Khan"));  //Output: true
+console.log(myName.endsWith("n"));  //Output: true
+console.log(myName.endsWith("a"));  //Output: false
+```
