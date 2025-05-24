@@ -63,3 +63,11 @@ Capitalize word.
 let myName = "Arbaz-Khan";
 console.log(myName.toUpperCase());  //Output: ARBAZ-KHAN
 ```
+
+### toLowerCase():
+Converts to Lowercase.
+
+```js
+let myName = "arbaz-khan";
+console.log(myName.toLowerCase())  //Output: arbaz-khan
+```
