@@ -112,3 +112,12 @@ let myName = "Arbaz Khan";
 console.log(myName.indexOf("b"))  //Output: 2
 console.log(myName.indexOf("Khan"))  //Output: 6
 ```
+
+### lastIndexOf():
+Return index from last.
+Searches right-to-left.
+
+```js
+let myName = "Arbaz Khan";
+console.log(myName.lastIndexOf("a"));  //Output: 8
+```
