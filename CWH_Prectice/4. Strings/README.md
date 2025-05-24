@@ -178,7 +178,7 @@ console.log(myTitle.split(" "));  //Separate string when " " comes.
 
 
 ## Questions of String
-Q1. Print each charactor on new file
+Q1. Print each charactor
 Q2. Print in reverse order
 Q3. Check if string is Pallindrome or not
 Q4. Toggle each charater
