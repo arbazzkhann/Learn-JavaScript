@@ -1,3 +1,3 @@
 
 let myName = "Arbaz Khan";
-console.log(myName.charAt(3));  //Output: a
+console.log(myName.charCodeAt(2));

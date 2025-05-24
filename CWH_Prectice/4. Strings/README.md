@@ -95,3 +95,12 @@ Returns charactor of given Index.
 let myName = "Arbaz Khan";
 console.log(myName.charAt(3));  //Output: a
 ```
+
+### charCodeAt():
+Returns ASCII Value of charactor.
+
+```js
+let myName = "Arbaz Khan";
+console.log(myName.charCodeAt(2));   //Output: 98 (because b is at 98 in ASCII)
+```
+
