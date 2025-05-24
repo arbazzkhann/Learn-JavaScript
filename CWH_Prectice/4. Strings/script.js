@@ -1,3 +1,3 @@
 
-let myDesc = "      Hello World       ";
-console.log(myDesc.trim());
+let myName = "Arbaz Khan";
+console.log(myName.charAt(3));  //Output: a
