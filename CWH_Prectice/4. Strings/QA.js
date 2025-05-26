@@ -88,3 +88,6 @@ for(let i = 0; i < myStr.length; i++) {
 }
 console.log(myStr);
 console.log(toggle);
+
+
+// Q5. Frequency of each character
