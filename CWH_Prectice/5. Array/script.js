@@ -1,10 +1,5 @@
-let arr = [];
-arr[1] = 20;
-arr[2] = 30;
-arr[3] = 100;
-arr[0] = 75;
+let arr = new Array(5)
+console.log(arr)
 
-arr[7] = 77;
-arr[9] = 89;
-
-console.log(arr);
+arr[99] = 65;
+console.log(arr)
