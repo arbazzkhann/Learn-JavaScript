@@ -1,16 +1,9 @@
-const data = document.querySelector('.data');
+let myArr = [33, 44, 53, 45, 6, 75, 667, 54];
 
-let myArr = new Array(3);
+let sum = 0;
 
-for(let i = 0; i < myArr.length; i++) {
-    let inputNum = prompt("Enter Number");
-    myArr[i] = inputNum;
+for(let i=0; i < myArr.length; i++) {
+    sum += myArr[i];
 }
 
-let html = '';
-
-for(let i = 0; i < myArr.length; i++) {
-    html += `<h1>${myArr[i]}</h1>`
-}
-
-data.innerHTML = html
+console.log(sum);
