@@ -69,7 +69,7 @@ for(let i=1; i < myArr.length; i++) {
 console.log(maxElement);
 ```
 
-3. Find minimum element in array?
+4. Find minimum element in array?
 ```js
 let myArr = [33, 45, 34, 5, 65, 42, 24, 57, 43, 66, 44];
 
@@ -82,4 +82,9 @@ for(let i=1; i < myArr.length; i++) {
 }
 
 console.log(minElement);
+```
+
+5. Finding 2nd Max element in array?
+```js
+
 ```
