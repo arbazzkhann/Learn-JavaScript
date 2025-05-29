@@ -86,5 +86,22 @@ console.log(minElement);
 
 5. Finding 2nd Max element in array?
 ```js
+let myArr = [303, 45, 34, 5, 65, 643, 42, 24, 57, 43, 66, 44];
+
+let maxElement = myArr[0];
+let secondMax = 0;
+
+for (let i = 1; i < myArr.length; i++) {
+    if (myArr[i] > maxElement) {
+        secondMax = maxElement;
+        maxElement = myArr[i];
+    } 
+    // else if (myArr[i] > secondMax && myArr[i] !== maxElement) {
+    //     secondMax = myArr[i];
+    // }
+}
+
+console.log("Max:", maxElement);
+console.log("Second Max:", secondMax);
 
 ```

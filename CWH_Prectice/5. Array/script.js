@@ -1,9 +1,9 @@
-let myArr = [33, 45, 34, 5, 65, 643, 42, 24, 57, 43, 66, 44];
+let myArr = [303, 45, 34, 5, 65, 643, 42, 24, 57, 43, 66, 44];
 
-let maxElement = -Infinity;
-let secondMax = -Infinity;
+let maxElement = myArr[0];
+let secondMax = 0;
 
-for (let i = 0; i < myArr.length; i++) {
+for (let i = 1; i < myArr.length; i++) {
     if (myArr[i] > maxElement) {
         secondMax = maxElement;
         maxElement = myArr[i];
