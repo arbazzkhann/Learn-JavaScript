@@ -1,15 +1,17 @@
-let myArr = [303, 45, 34, 5, 65, 643, 42, 24, 57, 43, 66, 44];
+let myArr = [0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0];
 
 let i = 0;
-let j = myArr.length - 1;
+let j = 0;
 
-while (i < j) {
+while (i < myArr.length) {
+  if(myArr[i] == 0) {
     let temp = myArr[i];
     myArr[i] = myArr[j];
     myArr[j] = temp;
+    j++
+  }
 
-    i++;
-    j--;
+  i++;
 }
 
 console.log(myArr);

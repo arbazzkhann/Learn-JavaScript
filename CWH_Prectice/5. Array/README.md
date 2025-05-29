@@ -157,3 +157,24 @@ while (i < j) {
 console.log(myArr);
 
 ```
+
+7. Sort array all 0s in the left and 1s in the right?
+```js
+let myArr = [0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0];
+
+let i = 0;
+let j = 0;
+
+while (i < myArr.length) {
+  if(myArr[i] == 0) {
+    let temp = myArr[i];
+    myArr[i] = myArr[j];
+    myArr[j] = temp;
+    j++
+  }
+
+  i++;
+}
+
+console.log(myArr);
+```
