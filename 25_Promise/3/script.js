@@ -8,4 +8,5 @@ fetch(myApi).then(data => {
 })
 .then(data => {
     fullName.innerText = `${data.results[0].name.title} ${data.results[0].name.first} ${data.results[0].name.last}`;
+    city.innerText = `${data.results[0].location.city}, ${data.results[0].location.state}, ${data.results[0].location.country}`;
 });
