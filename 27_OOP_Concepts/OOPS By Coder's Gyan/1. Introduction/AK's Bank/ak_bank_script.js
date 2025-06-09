@@ -1,5 +1,5 @@
 //constructor function
-function BankAccountCreation () {
+function BankAccountCreation (customerName, balance) {
     this.customerName = customerName;
     this.accountNumber = Date.now();
     this.balance = balance;
@@ -13,12 +13,17 @@ function BankAccountCreation () {
     }
 }
 
-
+const accounts = [];
 const accountForm = document.querySelector('#accountForm');
 const customerName = document.querySelector('#customerName');
 const initialBalance = document.querySelector('#initialBalance');
 
 accountForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log(customerName.value, initialBalance.value);
+
+    const account = new BankAccountCreation(customerName.value, parseInt(initialBalance.value));
+    accounts.push(account);
+
+    // console.log(customerName.value, initialBalance.value);
+    console.log(accounts); //Printing array of accounts
 })
