@@ -1,5 +1,5 @@
 //constructor function
-function BankAccountCreation (customerName, balance) {
+function BankAccountCreation (customerName, balance = 0) {
     this.customerName = customerName;
     this.accountNumber = Date.now();
     this.balance = balance;
@@ -7,7 +7,7 @@ function BankAccountCreation (customerName, balance) {
     this.deposit = (amount) => {
         this.balance += amount;
     }
-
+    
     this.withdraw = (amount) => {
         this.balance -= amount;
     }
@@ -26,4 +26,4 @@ accountForm.addEventListener('submit', (e) => {
 
     // console.log(customerName.value, initialBalance.value);
     console.log(accounts); //Printing array of accounts
-})
+});
