@@ -17,11 +17,19 @@ function BankAccount(customerName, balance = 0 ) {
     this.customerName = customerName;
     this.accountNumbe = Date.now();
     this.balance = balance;
+
+    //Functions are methods
+    this.deposit = (amount) => {
+        this.balance += amount;
+    }
 }
 
 const rakeshAccount = new BankAccount("Rakesh Kumar", 1000);
-const malikAccount = new BankAccount("Rakesh Kumar");
+const malikFareedAccount = new BankAccount("Malik Fareed");
 
-//Both takes separate space in memory on different memory location
-console.log(rakeshAccount, malikAccount)
+console.log(rakeshAccount, malikFareedAccount);
+
+//calling function
+malikFareedAccount.deposit(5000);
+console.log(malikFareedAccount);
 ```
