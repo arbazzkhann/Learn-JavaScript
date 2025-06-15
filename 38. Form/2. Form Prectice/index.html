@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module">
+        let myForm = document.querySelector('#myForm');
+        let formName = document.querySelector('#formName');
+        let formAge = document.querySelector('#formAge');
+        
+        myForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log(`Hello ${formName.value}, you are ${formAge.value} years old.`);
+        }); 
+    </script>
+</head>
+<body>
+    <form id="myForm"> 
+        <input type="text" id="formName">Name</input>
+        <input type="number" id="formAge">Age</input>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
