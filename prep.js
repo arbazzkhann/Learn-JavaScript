@@ -21,3 +21,13 @@ const filterdArray = myArr.filter((item) => {
 });
 
 console.log(filterdArray);
+
+
+
+//Reduce:
+const forReduce = [2,5,1,2,4,7,5,2];
+const reducedArray = forReduce.reduce((previous, current) => {
+    return previous + current;
+}, 0);
+
+console.log(reducedArray)
