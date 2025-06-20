@@ -89,8 +89,9 @@ console.log("A" , myArr);  //original Array
 
 
 //(.slice)
-//it not manuplating original array
-//last index will not include
+//create new array
+//not mutating original array
+//end-index not counting
 let originalArray = ["Spiderman", "Superman", "Ironman", "Batman"];
 
 let slicedArray = originalArray.slice(1,2);
@@ -100,8 +101,9 @@ console.log("B", originalArray);    //original Array
 
 
 //(.splice)
-//it manuplating original array
-//last index will include
+//Returns new array of removed elements from original array
+//Mutating original array
+//last index will be count
 //******splice array me se cut kr leta hai elements ko ******
 let splicedArray = originalArray.splice(1,2);    
 console.log(splicedArray);       //spliced Array
