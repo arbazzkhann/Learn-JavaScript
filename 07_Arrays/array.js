@@ -92,6 +92,7 @@ console.log("A" , myArr);  //original Array
 //create new array
 //not mutating original array
 //end-index not counting
+//Syntax: array.slice(start, end);
 let originalArray = ["Spiderman", "Superman", "Ironman", "Batman"];
 
 let slicedArray = originalArray.slice(1,2);
@@ -104,6 +105,7 @@ console.log("B", originalArray);    //original Array
 //Returns new array of removed elements from original array
 //Mutating original array
 //last index will be count
+//Syntax : array.splice(star, count);
 //******splice array me se cut kr leta hai elements ko ******
 let splicedArray = originalArray.splice(1,2);    
 console.log(splicedArray);       //spliced Array
