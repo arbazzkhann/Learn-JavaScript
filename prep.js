@@ -1,12 +1,15 @@
-//https://randomuser.me/api/
+//Map:
+//return new array
+//return keyword is needed when in curly braces
 
-async function fetchData() {
-    const apiData = await fetch('https://randomuser.me/api/');
-    const finalData = await apiData.json();
-    const finalName = `${finalData.results[0].name.first} ${finalData.results[0].name.last}`
-    const gender = finalData.results[0].gender;
-    console.log(`${finalName}, ${gender}`);
-}
+let myArr = [
+    {firstName: "Aman", id: 101},
+    {firstName: "Suman", id: 102},
+    {firstName: "Madhav", id: 103},
+    {firstName: "Sanjay", id: 104}
+]
 
 
-fetchData();
+const firstNames = myArr.map((item) => item.id)
+
+console.log(firstNames);
