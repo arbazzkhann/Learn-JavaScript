@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" type="module"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bankHeading {
+            text-align: center;
+        }
+
+        .accountCreationContainer, .accountCreationForm, .accountUpdateContainer {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .accountCreationContainer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="bankHeading">Bank Account</h1>
+    <hr />
+    <div class="accountCreationContainer">
+        <h2>Account Creation</h2>
+        <form id="accountCreationForm" class="accountCreationForm">
+            <input type="text" id="creationFullName" placeholder="Full Name" class="creationFullName" />
+            <input type="number" id="creationAmount" placeholder="amount" class="creationAmount" />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="accountUpdateContainer">
+        <h2>Account Update</h2>
+        <form id="accountUpdationForm" class="accountUpdationForm">
+            <input id="accountNumber" type="number" placeholder="Account Number" class="accountNumber" />
+            <input id="updationAmount" type="number" placeholder="amount" class="updationAmount" />
+            <select id="accountUpdationSelectionBox" class="accountUpdationSelectionBox">
+                <option value="deposit">Addition</option>
+                <option value="withdraw">Subtraction</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <h3 class="message"></h3>
+</body>
+</html>
