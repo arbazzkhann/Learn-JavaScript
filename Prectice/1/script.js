@@ -43,12 +43,26 @@ accountUpdationForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     accounts.map((item) => {
-        if(item.accountNumber == accountNumber.value) {
+        if(accountUpdationSelectionBox.value === "deposit") {
+            if(item.accountNumber == accountNumber.value) {
             item.amount += +updationAmount.value;
             console.log(accounts)
-        }
-        else {
-            console.log("Not found", item.accountNumber, accountNumber);
+            document.querySelector('.message').innerText = item.amount;
+            }
+            else {
+                // console.log("Account not found!");
+                document.querySelector('.message').innerText = "Account not found!";
+            }
+        } 
+        else if(accountUpdationSelectionBox.value === "withdraw") {
+            if(item.accountNumber == accountNumber.value) {
+                item.amount -= +updationAmount.value;
+                console.log(accounts)
+            }
+            else {
+                // console.log("Account not found!");
+                document.querySelector('.message').innerText = "Account not found!";
+            }
         }
     })
 })
