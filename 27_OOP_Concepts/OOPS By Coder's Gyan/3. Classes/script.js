@@ -7,8 +7,20 @@ class BankAccountCreate {
         this.balance = balance;
         this.accountNumber = Date.now();
     }
+
+    deposit(amount) {
+        this.balance += amount;
+    }
+    withdraw(amount) {
+        this.balance -= amount;
+    }
 }
 
 const rakesh = new BankAccountCreate("Rakesh Kumar", 350);
-console.log(rakesh);
-console.log(typeof BankAccountCreate);
+console.log(rakesh.balance);
+
+// rakesh.deposit(799);
+// console.log(rakesh.balance);
+// rakesh.withdraw(10);
+// console.log(rakesh.balance);
+
