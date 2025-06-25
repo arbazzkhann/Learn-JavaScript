@@ -13,7 +13,7 @@ const depositAmountInput = document.querySelector('#depositAmountInput');
 class BankAccountCreate{
     constructor(customerName, balance = 0) {
         this.customerName = customerName;
-        this.balance = balance;
+        this.balance = +balance;
         this.accountNumber = Date.now();
     }
 
@@ -48,12 +48,12 @@ showUsersButton.addEventListener('click', (e) => {
 });
 
 //deposit amount form
-// depositAmountForm.addEventListener('submit', (e) => {
-//     e.preventDefault();
+depositAmountForm.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-//     emptyArrayForUsers.map((item) => {
-//         if(item.accountNumber === +depositAccountNumberInput.value) {
-//             item.deposit(+depositAmountInput.value);
-//         }
-//     })
-// });
+    emptyArrayForUsers.map((item) => {
+        if(item.accountNumber === +depositAccountNumberInput.value) {
+            item.deposit(+depositAmountInput.value);
+        }
+    })
+});
