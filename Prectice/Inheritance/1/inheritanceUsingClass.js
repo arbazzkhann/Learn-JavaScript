@@ -10,6 +10,11 @@ const depositAmountForm = document.querySelector('#depositAmountForm');
 const depositAccountNumberInput = document.querySelector('#depositAccountNumberInput');
 const depositAmountInput = document.querySelector('#depositAmountInput');
 
+// Withdraw amount form
+const withdrawAmountForm = document.querySelector('#withdrawAmountForm');
+const withdrawAccountNumberInput = document.querySelector('#withdrawAccountNumberInput');
+const withdrawAmountInput = document.querySelector('#withdrawAmountInput');
+
 class BankAccountCreate{
     constructor(customerName, balance = 0) {
         this.customerName = customerName;
