@@ -62,3 +62,14 @@ depositAmountForm.addEventListener('submit', (e) => {
         }
     })
 });
+
+//withdraw amount form
+withdrawAmountForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    emptyArrayForUsers.map((item) => {
+        if(item.accountNumber === +withdrawAccountNumberInput.value) {
+            item.withdraw(+withdrawAmountInput.value);
+        }
+    })
+});
