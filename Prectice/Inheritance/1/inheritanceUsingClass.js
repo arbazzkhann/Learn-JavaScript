@@ -15,6 +15,12 @@ const withdrawAmountForm = document.querySelector('#withdrawAmountForm');
 const withdrawAccountNumberInput = document.querySelector('#withdrawAccountNumberInput');
 const withdrawAmountInput = document.querySelector('#withdrawAmountInput');
 
+// Saving account create form
+const savingAccountCreateForm = document.querySelector('#savingAccountCreateForm');
+const savingAccountCreateNameInput = document.querySelector('#savingAccountCreateNameInput');
+const savingAccountCreateBalanceInput = document.querySelector('#savingAccountCreateBalanceInput');
+
+
 class BankAccountCreate{
     constructor(customerName, balance = 0) {
         this.customerName = customerName;
@@ -73,3 +79,11 @@ withdrawAmountForm.addEventListener('submit', (e) => {
         }
     })
 });
+
+//Saving account form
+savingAccountCreateForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    let user1 = new SavingAccountCreate(savingAccountCreateNameInput.value, savingAccountCreateBalanceInput.value);
+    emptyArrayForUsers.push(user1);
+})
