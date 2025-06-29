@@ -17,6 +17,9 @@ class BankAccountCreate {
     }
 
     setBalance(amount) {
+        if(isNaN(amount)) {
+            throw new Error('Amount is not a valid input.');
+        }
         this.#balance = amount
     }
 }
@@ -26,5 +29,5 @@ const rakesh = new BankAccountCreate("rakesh", 3000);
 console.log(rakesh);
 
 // rakesh.#balance = "Suman";  //only access within class
-rakesh.setBalance(340);
+rakesh.setBalance("mu");
 console.log(rakesh);
