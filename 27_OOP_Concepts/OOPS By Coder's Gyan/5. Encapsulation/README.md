@@ -4,12 +4,14 @@
 ## Older private properties convension:
 * Previously we use **_** in the begning of properites that should be **private**.
 
-## New private properties:
-* Now we use **#** to define private properites.
-* private properites only access within class.
+## New private properties and Methods:
+* Now we use **#** to define private **properites/variables** and **methods/functions**.
+* private properites only access **within class**, **not even in it child class**. 
+
 
 ### Example:
 ```js
+//+-+-+-+-+-+-+-+-+-+-+-+-+ public methods +-+-+-+-+-+-+-+-+-+-+-+-+
     // using "public methods"
     setBalance(amount) {
         if(isNaN(amount)) {
@@ -21,22 +23,23 @@
         return this.#balance;
     }
 
-//+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+//+-+-+-+-+-+-+-+-+-+-+-+-+ getter and setter +-+-+-+-+-+-+-+-+-+-+-+-+
 
-    // using "getter" and "setter"
-    // accessing as normal property
-    set balance(amount) {
-        if(isNaN(amount)) {
-            throw new Error('Amount is not a valid input.');
-        }
-        this.#balance = amount
+// using "getter" and "setter"
+// accessing as normal property
+// while accessing getter and setter - doesn't need of calling "()".
+set balance(amount) {
+    if(isNaN(amount)) {
+        throw new Error('Amount is not a valid input.');
     }
-    get balance() {
-        return this.#balance;
-    }
-```
-### Accessing private properties
-```js
+    this.#balance = amount
+}
+get balance() {
+    return this.#balance;
+}
+
+//+-+-+-+-+-+-+-+-+-+-+-+-+ accessing private variables +-+-+-+-+-+-+-+-+-+-+-+-+
+
 //it will throw error
 //only access within class
 rakesh.#balance = "Suman";
@@ -48,4 +51,22 @@ console.log(rakesh.getBalance());  //using public methods
 //getter and setter
 rakesh.balance = 550;  //setting balance using setter
 console.log(rakesh.balance);  //using getter
+```
+
+
+### Private methods:
+```js
+//+-+-+-+-+-+-+-+-+-+-+-+-+ creating private methods +-+-+-+-+-+-+-+-+-+-+-+-+
+//private method
+#calculateInterest() {
+    console.log("Calculated interest is ", this.#balance/23);
+}
+//getter and setter for calculateInterest
+get calculateInterest() {
+    this.#calculateInterest();
+}
+
+//+-+-+-+-+-+-+-+-+-+-+-+-+ accessing private methods using "getter and setter" +-+-+-+-+-+-+-+-+-+-+-+-+
+//getting private method
+rakesh.calculateInterest;
 ```
