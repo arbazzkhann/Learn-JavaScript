@@ -9,13 +9,19 @@ class BankAccountCreate {
         this.accountNumber = Date.now();
     }
 
-    deposit(amount) {
+    #deposit(amount) {
         this.#balance += +amount;
     }
-    //getter for property
-    get viewBalance() {
-        return this.#balance;
+
+    // Setter for deposit
+    set deposit(amount) {
+        if (amount <= 0 || isNaN(amount)) {
+            console.log("Invalid deposit amount.");
+            return;
+        }
+        this.#deposit(amount);
     }
+
 
 }
 
@@ -31,7 +37,7 @@ class BankAccountCreate {
 // });
 
 const ramesh = new BankAccountCreate("ramesh", 30);
-ramesh.deposit(45)
+ramesh.deposit = 5000;
 
 console.log(ramesh.viewBalance);
 
