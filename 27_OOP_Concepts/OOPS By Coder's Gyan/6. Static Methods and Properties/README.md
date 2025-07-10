@@ -27,3 +27,24 @@ class MathUtil {
 console.log(MathUtil.add(2, 3)); // ✅ 5
 ```
 
+
+## 🔹 Static Property (Static Variable):
+1. Declared with the static keyword.
+
+2. Shared across all instances of the class.
+
+3. Accessed using the class name, not the instance.
+
+```js
+class Counter {
+  static count = 0;
+
+  constructor() {
+    Counter.count++;
+  }
+}
+
+new Counter();
+new Counter();
+console.log(Counter.count); // ✅ 2
+```
