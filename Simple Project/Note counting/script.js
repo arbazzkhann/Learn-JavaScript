@@ -68,5 +68,4 @@ else {
     if(one != 0) {
         console.log("Number of 1: " + Math.trunc(one));
     }
-
 }
