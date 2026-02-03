@@ -2,10 +2,12 @@
 class User {
     balance = 0;
     accountNumber = Date.now();
+    static id = 1;
 
     constructor(name, age) {
         this.name = name;
         this.age = age;
+        this.id = User.id++;
     }
 
     desposit(amount) {
@@ -21,15 +23,8 @@ class User {
     }
 }
 
-let user1 = new User("Ramesh", 29);
-let user2 = new User("Suresh", 27);
-let user3 = new User("Suresh", 22);
+const user1 = new User("ramesh", 36);
+const user2 = new User("mahesh", 32);
+const user3 = new User("ali", 43);
 
-//users array
-const users = [user1, user2, user3];
-
-console.log(users);
-
-// users.sort(User.compareByAge);
-
-console.log(users.sort(User.compareByAge));
+console.log(user1, user2, user3);
